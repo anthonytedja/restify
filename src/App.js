@@ -1,4 +1,4 @@
-import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Route, Routes, Router } from 'react-router-dom';
 import IndexPage from './pages/index';
 import TermsPage from './pages/terms';
 import AboutPage from './pages/about';
@@ -24,7 +24,8 @@ import './App.css';
 
 function App() {
 	return (
-		<HashRouter>
+		<BrowserRouter basename={'/restify'}>
+			
 			<Routes>
 				<Route path="/error">
 					<Route path="400" element={<BadRequestPage/>}/>
@@ -56,7 +57,8 @@ function App() {
 					<Route path="*" element={<NotFoundPage/>} />
 				</Route>
 			</Routes>
-		</HashRouter>
+			
+		</BrowserRouter>
 	);
 }
 

@@ -7,16 +7,16 @@ import logo from "../../assets/img/restaurant.png";
 
 const NavBar = ({ onSubmit, onBlur }) => {
     const restaurantID = sessionStorage.getItem("restaurant_id") ? sessionStorage.getItem("restaurant_id") : "-1";
-    const visibility = (window.location.pathname === "/") ? "visible" : "hidden";
+    const visibility = (window.location.pathname === "/restify/" || window.location.pathname === "/restify") ? "visible" : "hidden";
     const visibilityIcon = (sessionStorage.getItem("token") ? "visible" : "hidden");
 
-    const homepagelink = (window.location.pathname === "/") ? "#" : "/";
+    const homepagelink = (window.location.pathname === "/restify/" || window.location.pathname === "/restify") ? "#" : "/";
     const accountLink = sessionStorage.getItem("token") ? "/accounts" : "/accounts/login";
     const restaurantLink = !sessionStorage.getItem("token") ? "/accounts/login" :
         (sessionStorage.getItem("restaurant_id") === "-1") ? "/restaurants/create/" : `/restaurants/${sessionStorage.getItem("restaurant_id")}`;
     const addDataLink = !sessionStorage.getItem("token") ? "/accounts/login" :
         (sessionStorage.getItem("restaurant_id") === "-1") ? "/restaurants/create/" : `/restaurants/${restaurantID}/add/`;
-    
+
     return (
         <nav className="navbar navbar-light navbar-expand-lg navigation-clean-search fixed-top" id="mainNav" style={{ backgroundColor: 'white', borderBottom: '1px solid var(--bs-gray-300)' }}>
             <div className="container"><Link className="navbar-brand" to={homepagelink}><img alt="Restify Logo" src={logo} style={{ maxHeight: 40, marginRight: 15 }} /><strong>Restify</strong></Link><button data-bs-toggle="collapse" className="navbar-toggler" data-bs-target="#navcol-1"><span className="visually-hidden">Toggle navigation</span><span className="navbar-toggler-icon" /></button>
