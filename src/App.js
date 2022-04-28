@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import IndexPage from './pages/index/index';
+import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom';
+import IndexPage from './pages/index';
 import TermsPage from './pages/terms';
 import AboutPage from './pages/about';
 import RestaurantPage from './pages/restaurant';
@@ -24,7 +24,7 @@ import './App.css';
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path="/error">
 					<Route path="400" element={<BadRequestPage/>}/>
@@ -56,7 +56,7 @@ function App() {
 					<Route path="*" element={<NotFoundPage/>} />
 				</Route>
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
