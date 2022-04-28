@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/restify/static/css/main.e502add9.css",
+    "main.js": "/restify/static/js/main.3160b87e.js",
+    "static/js/787.cda612ba.chunk.js": "/restify/static/js/787.cda612ba.chunk.js",
+    "static/media/fa-solid-900.svg": "/restify/static/media/fa-solid-900.76857d47348d8e00ee05.svg",
+    "static/media/fa-brands-400.svg": "/restify/static/media/fa-brands-400.4a43897c83af77d2ffec.svg",
+    "static/media/iphone.png": "/restify/static/media/iphone.2550858e486584d0599d.png",
+    "static/media/restaurant-header.jpg": "/restify/static/media/restaurant-header.e8bfca81e4efb31657fd.jpg",
+    "static/media/fa-solid-900.eot": "/restify/static/media/fa-solid-900.d12229bd491638fa106a.eot",
+    "static/media/fa-solid-900.ttf": "/restify/static/media/fa-solid-900.c4e5551b39a7d5c61027.ttf",
+    "static/media/fa-regular-400.svg": "/restify/static/media/fa-regular-400.ed86ea0de85e2d6fcab9.svg",
+    "static/media/fa-brands-400.eot": "/restify/static/media/fa-brands-400.39c1e33ca5d67754117c.eot",
+    "static/media/fa-brands-400.ttf": "/restify/static/media/fa-brands-400.4d5ec63961cae00e3536.ttf",
+    "static/media/demo.jpg": "/restify/static/media/demo.37b127960d56d2d3ef50.jpg",
+    "static/media/fa-solid-900.woff": "/restify/static/media/fa-solid-900.6ccf0adaba47375248a9.woff",
+    "static/media/fa-brands-400.woff": "/restify/static/media/fa-brands-400.a7cb8a53a882fd128ae0.woff",
+    "static/media/fa-solid-900.woff2": "/restify/static/media/fa-solid-900.23a7efd8d0ef4f232f2b.woff2",
+    "static/media/fa-brands-400.woff2": "/restify/static/media/fa-brands-400.38168200fbb96276baf9.woff2",
+    "static/media/food.jpeg": "/restify/static/media/food.aece7cc31601ae941bab.jpeg",
+    "static/media/fa-regular-400.eot": "/restify/static/media/fa-regular-400.d099731ecd1c83c2be63.eot",
+    "static/media/fa-regular-400.ttf": "/restify/static/media/fa-regular-400.a403036f8820a4a4273d.ttf",
+    "static/media/fa-regular-400.woff": "/restify/static/media/fa-regular-400.b3759c28ef0607075578.woff",
+    "static/media/restaurant.png": "/restify/static/media/restaurant.955a73c023e671b06f0b.png",
+    "static/media/fa-regular-400.woff2": "/restify/static/media/fa-regular-400.a28b95d3e799579ba1dd.woff2",
+    "static/media/default-avatar.png": "/restify/static/media/default-avatar.522560c8ca5313e66b8c.png",
+    "index.html": "/restify/index.html",
+    "main.e502add9.css.map": "/restify/static/css/main.e502add9.css.map",
+    "main.3160b87e.js.map": "/restify/static/js/main.3160b87e.js.map",
+    "787.cda612ba.chunk.js.map": "/restify/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e502add9.css",
+    "static/js/main.3160b87e.js"
+  ]
+}
