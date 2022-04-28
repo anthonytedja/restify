@@ -1,0 +1,38 @@
+.restaurant-comment {
+    list-style: none;
+    width: 80%;
+    margin: 1em;
+    background-color:white;
+    border-radius: 10px;
+}
+.restaurant-comment-header {
+    display: flex;
+    margin: 1em 0;
+}
+.comment-author-container {
+    width: 50%;
+    margin: 0;
+}
+.comment-author-container p {
+    float: left;
+    margin: 0 0 0 5%;
+    font-weight: bold;
+}
+.comment-date-container {
+    width: 50%;
+    margin: 0;
+}
+.comment-date-container p {
+    float: right;
+    margin: 0 5% 0 0;
+    font-size: 1em;
+}
+.restaurant-comment-body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    padding: 1em 1em 2em 1em;
+    font-size: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

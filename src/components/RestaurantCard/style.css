@@ -1,0 +1,108 @@
+li.restaurant-card {
+    list-style: none;
+    min-width: 200px;
+    min-height: 250px;
+    width: 300px;
+    height: 400px;
+    margin: 2em;
+    padding: 0;
+}
+
+* {
+    transition: all ease 0.2s;
+}
+
+.restaurant-card .card-image-header {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-image-header .card-icon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 30%;
+    left: 10%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.card-icon {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.restaurant-card .card-body {
+    position: relative;
+    width: 100%;
+    height: 55%;
+    padding-bottom: 0;
+    background-color: white;
+}
+.card-body .card-title {
+    display: block;
+    width: 220px;
+    height: 40px;
+    margin: 5% 5% 5% 5%;
+    font-size: 1.8em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.card-body .card-description {
+    width: 90%;
+    height: 90%;
+    margin: 0% 5% 0% 5%;
+    font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-footer-p1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+}
+.card-footer-p1 .page-link-p1-container {
+    width: 50%;
+}
+.card-footer-p1 .blog-link-p1-container {
+    width: 50%;
+}
+.page-link-p1-container .page-link-p1 {
+    float: left;
+    margin-left: 5%;
+}
+.blog-link-p1-container .blog-link-p1 {
+    float: right;
+    margin-right: 5%;
+}
+
+.card-footer-icon {
+    font-size: 1.5em;
+}
+
+.page-link-p1 {
+    text-decoration: none;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.restaurant-card:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.card-footer-p1 {
+    height: 10%;
+    border-radius: 0 0 10px 10px;
+}
