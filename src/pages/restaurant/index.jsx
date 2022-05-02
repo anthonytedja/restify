@@ -5,7 +5,7 @@ import "../../assets/css/Profile-Card.css";
 import "./style.css";
 
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
@@ -176,7 +176,7 @@ const RestaurantPage = () => {
                                     <img className="rounded-circle profile-pic" src={logo ? "https://anthonytedja.pythonanywhere.com/media/" + logo : defaultLogo} />
                                     <button className="btn btn-primary restaurant-button" type="submit" style={{ backgroundColor: likeBtnColor }} onClick={handleLike} >{likes}&nbsp;<i className={likeBtnIcon} /></button>
                                     <button className="btn btn-primary restaurant-button" type="submit" style={{ backgroundColor: followBtnColor }} onClick={handleFollow} >{followers}&nbsp;<i className={followBtnIcon} /></button>
-                                    <a className="btn btn-primary restaurant-button" style={{ backgroundColor: 'lightgrey', visibility: editvisibility }} href={`/restaurants/${restaurantID}/edit`} >Edit <i className={"fas fa-cog"} /></a>
+                                    <Link className="btn btn-primary restaurant-button" style={{ backgroundColor: 'lightgrey', visibility: editvisibility }} to={`/restaurants/${restaurantID}/edit`} >Edit <i className={"fas fa-cog"} /></Link>
                                     <h3 className="profile-name">{name}</h3>
                                     <p><i className="fas fa-location-arrow" />&nbsp; {address}</p>
                                     <p><i className="fas fa-search-location" />&nbsp; {postalCode}</p>
