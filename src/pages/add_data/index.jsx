@@ -13,41 +13,46 @@ import FormMenuItem from "../../components/forms/FormMenuItem";
 import FormImage from "../../components/forms/FormImage";
 
 const AddDataPage = () => {
-    let navigate = useNavigate();
-    const { restaurantID } = useParams();
+  let navigate = useNavigate();
+  const { restaurantID } = useParams();
 
-    useEffect(() => {
-        if (!sessionStorage.getItem("token")) {
-            navigate("/error/401");
-        }
-        if (sessionStorage.getItem("restaurant_id") !== restaurantID) {
-            navigate("/error/403");
-        }
-    }, []);
+  useEffect(() => {
+    if (!sessionStorage.getItem("token")) {
+      navigate("/error/401");
+    }
+    if (sessionStorage.getItem("restaurant_id") !== restaurantID) {
+      navigate("/error/403");
+    }
+  }, [navigate, restaurantID]);
 
-    return (
-        <>
-        <NavBar />
-        <main className="page lanidng-page" style={{ background: 'var(--bs-light)', minHeight: '100vh' }}>
-            <section>
-                <div className="mx-auto header-content">				<div className="caption v-middle text-center">
-                    <h1 className="cd-headline clip">
-                        <span className="blc" />
-                        <span className="cd-words-wrapper">
-                            <b className="is-visible">Add Data.</b>
-                        </span>
-                    </h1>
-                </div>
-                    <FormBlog/>
-                    <FormMenuItem/>
-                    <FormImage/>
-                </div>
-            </section>
-        </main>
+  return (
+    <>
+      <NavBar />
+      <main
+        className="page lanidng-page"
+        style={{ background: "var(--bs-light)", minHeight: "100vh" }}
+      >
+        <section>
+          <div className="mx-auto header-content">
+            {" "}
+            <div className="caption v-middle text-center">
+              <h1 className="cd-headline clip">
+                <span className="blc" />
+                <span className="cd-words-wrapper">
+                  <b className="is-visible">Add Data.</b>
+                </span>
+              </h1>
+            </div>
+            <FormBlog />
+            <FormMenuItem />
+            <FormImage />
+          </div>
+        </section>
+      </main>
 
-        <Footer />
-        </>
-    )
-}
+      <Footer />
+    </>
+  );
+};
 
 export default AddDataPage;
