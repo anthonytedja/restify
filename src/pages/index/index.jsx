@@ -12,12 +12,14 @@ import NothingHere from "../../components/NothingHere";
 const IndexPage = () => {
   const [result, setResult] = useState({ next: null, results: [] });
   const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
 
   useEffect(() => {
     fetch("https://anthonytedja.pythonanywhere.com/restaurants/search/?q=''")
       .then((res) => res.json())
       .then((res) => {
+        setLoading(false);
         setResult(res);
       });
   }, []);
@@ -101,7 +103,8 @@ const IndexPage = () => {
                 />
               ))}
             </ul>
-            {result.results.length === 0 && (
+            {loading && <NothingHere optText="Loading..." />}
+            {!loading && result.results.length === 0 && (
               <NothingHere optText={`No results found for “${search}”`} />
             )}
           </div>

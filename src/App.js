@@ -26,7 +26,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename={"/restify"}>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/error">
